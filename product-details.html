@@ -896,31 +896,38 @@
                 <div class="col-lg-6">
                     <div class="product__details__pic">
                         <div class="product__details__pic__left product__thumb nice-scroll">
-                            <a class="pt active">
+                            <a class="pt active" href="#product-1">
                                 <img src="https://preview.colorlib.com/theme/ashion/img/product/details/thumb-1.jpg"
-                                    alt=""
-                                    onclick="document.getElementById('product-img').src='https://preview.colorlib.com/theme/ashion/img/product/details/product-1.jpg'">
+                                    alt="">
                             </a>
-                            <a class="pt">
+                            <a class="pt" href="#product-2">
                                 <img src="https://preview.colorlib.com/theme/ashion/img/product/details/thumb-2.jpg"
-                                    alt=""
-                                    onclick="document.getElementById('product-img').src='https://preview.colorlib.com/theme/ashion/img/product/details/product-2.jpg'">
+                                    alt="">
                             </a>
-                            <a class="pt">
+                            <a class="pt" href="#product-3">
                                 <img src="https://preview.colorlib.com/theme/ashion/img/product/details/thumb-3.jpg"
-                                    alt=""
-                                    onclick="document.getElementById('product-img').src='https://preview.colorlib.com/theme/ashion/img/product/details/product-3.jpg'">
+                                    alt="">
                             </a>
-                            <a class="pt">
+                            <a class="pt" href="#product-4">
                                 <img src="https://preview.colorlib.com/theme/ashion/img/product/details/thumb-4.jpg"
-                                    alt=""
-                                    onclick="document.getElementById('product-img').src='https://preview.colorlib.com/theme/ashion/img/product/details/product-4.jpg'">
+                                    alt="">
                             </a>
                         </div>
-                        <div class="product__details__pic__right">
-                            <img id="product-img"
-                                src="https://preview.colorlib.com/theme/ashion/img/product/details/product-1.jpg" alt=""
-                                style="width:100%">
+                        <div class="product__details__slider__content">
+                            <div class="product__details__pic__slider owl-carousel">
+                                <img data-hash="product-1" class="product__big__img"
+                                    src="https://preview.colorlib.com/theme/ashion/img/product/details/product-1.jpg"
+                                    alt="">
+                                <img data-hash="product-2" class="product__big__img"
+                                    src="https://preview.colorlib.com/theme/ashion/img/product/details/product-2.jpg"
+                                    alt="">
+                                <img data-hash="product-3" class="product__big__img"
+                                    src="https://preview.colorlib.com/theme/ashion/img/product/details/product-3.jpg"
+                                    alt="">
+                                <img data-hash="product-4" class="product__big__img"
+                                    src="https://preview.colorlib.com/theme/ashion/img/product/details/product-4.jpg"
+                                    alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -940,14 +947,15 @@
                             magni lores eos qui ratione voluptatem sequi nesciunt.</p>
                         <div class="product__details__button">
                             <div class="quantity">
+                                <span>Quantity:</span>
                                 <div class="pro-qty">
                                     <input type="number" value="1">
                                 </div>
                             </div>
-                            <a href="#" class="cart-btn"><i class="fa fa-shopping-bag"></i> Add to cart</a>
+                            <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
                             <ul>
                                 <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange-alt"></i></a></li>
+                                <li><a href="#"><i class="fa fa-sliders-h"></i></a></li>
                             </ul>
                         </div>
                         <div class="product__details__widget">
@@ -955,27 +963,37 @@
                                 <li>
                                     <span>Availability:</span>
                                     <div class="stock__checkbox">
-                                        <label>In Stock</label>
+                                        <label>
+                                            <input type="checkbox">
+                                            In Stock
+                                            <span class="checkmark"></span>
+                                        </label>
                                     </div>
                                 </li>
                                 <li>
                                     <span>Available color:</span>
                                     <div class="color__checkbox">
-                                        <label><input type="radio" name="color__radio"><span class="checkmark"
-                                                style="background:#e90e0c"></span></label>
-                                        <label><input type="radio" name="color__radio"><span class="checkmark"
-                                                style="background:#0b0b0b"></span></label>
-                                        <label><input type="radio" name="color__radio"><span class="checkmark"
-                                                style="background:#d5d6d8"></span></label>
+                                        <label>
+                                            <input type="radio" name="color__radio" checked>
+                                            <span class="checkmark" style="background:#ca1515"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color__radio">
+                                            <span class="checkmark" style="background:#0b0b0b"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color__radio">
+                                            <span class="checkmark" style="background:#d5d6d8"></span>
+                                        </label>
                                     </div>
                                 </li>
                                 <li>
                                     <span>Available size:</span>
                                     <div class="size__btn">
-                                        <label>S <input type="radio"></label>
+                                        <label>XS <input type="radio"></label>
+                                        <label class="active">S <input type="radio"></label>
                                         <label>M <input type="radio"></label>
                                         <label>L <input type="radio"></label>
-                                        <label>XS <input type="radio"></label>
                                     </div>
                                 </li>
                                 <li>
@@ -1289,39 +1307,43 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".product__details__pic__left").owlCarousel({
+            $(".product__details__pic__slider").owlCarousel({
                 loop: false,
-                margin: 10,
-                nav: true,
-                items: 3,
+                margin: 0,
+                items: 1,
                 dots: false,
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
                 smartSpeed: 1200,
                 autoHeight: false,
                 autoplay: false,
                 mouseDrag: true,
-                startPosition: 'URLHash',
-                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-                responsive: {
-                    0: {
-                        items: 3,
-                    },
-                    576: {
-                        items: 3,
-                    },
-                    992: {
-                        items: 3,
-                    },
-                    1200: {
-                        items: 3,
-                    }
-                }
+                startPosition: 'URLHash'
+            }).on('changed.owl.carousel', function (event) {
+                var indexNum = event.item.index + 1;
+                product_thumbs(indexNum);
             });
-            $(".image-popup").click(function (e) {
-                e.preventDefault();
-                var imgUrl = $(this).attr('src');
-                $("#product-img").attr("src", imgUrl);
+
+            function product_thumbs(num) {
+                var thumbs = document.querySelectorAll('.product__thumb a');
+                thumbs.forEach(function (e) {
+                    e.classList.remove("active");
+                    if (e.hash.split("-")[1] == num) {
+                        e.classList.add("active");
+                    }
+                });
+            }
+
+            $(".nice-scroll").niceScroll({
+                cursorborder: "",
+                cursorcolor: "#dddddd",
+                boxzoom: false,
+                cursorwidth: 5,
+                background: 'rgba(0, 0, 0, 0.2)',
+                cursorborderradius: 0,
             });
         });
     </script>
