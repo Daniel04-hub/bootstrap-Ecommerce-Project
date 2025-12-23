@@ -220,19 +220,21 @@
 
         /* Product Details */
         .product__details__pic {
-            overflow: hidden;
-            /* Clearfix for floats */
+            display: flex;
+            align-items: flex-start;
         }
 
         .product__details__pic__left {
-            width: 22%;
-            float: left;
-            margin-right: 20px;
+            width: 20%;
+            /* Slightly smaller for thumbs */
+            margin-right: 5%;
+            /* Space between thumbs and image */
+            flex-shrink: 0;
         }
 
         .product__details__slider__content {
             width: 75%;
-            float: right;
+            flex-grow: 1;
         }
 
         .product__details__pic__left .pt {
