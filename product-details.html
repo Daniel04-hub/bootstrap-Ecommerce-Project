@@ -222,12 +222,19 @@
         .product__details__pic__left {
             width: 22%;
             float: left;
-            margin-right: 20px
+            margin-right: 20px;
         }
 
-        .product__details__pic__right {
+        .product__details__slider__content {
             width: 75%;
-            float: right
+            float: right;
+        }
+
+        /* Ensure parent clears floats if not already handled by Bootstrap row */
+        .product__details__pic:after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
         .product__details__pic__left .pt {
